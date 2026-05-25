@@ -1,0 +1,1 @@
+CREATE POLICY "Deals: sales insert" ON public.pipeline_deals FOR INSERT TO authenticated WITH CHECK (has_role(auth.uid(), 'sales'::app_role) OR has_role(auth.uid(), 'owner'::app_role));

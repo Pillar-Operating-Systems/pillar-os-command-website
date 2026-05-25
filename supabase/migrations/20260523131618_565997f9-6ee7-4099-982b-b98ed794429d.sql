@@ -1,0 +1,1 @@
+ALTER TABLE public.pipeline_deals ADD COLUMN IF NOT EXISTS waiting_reason text;

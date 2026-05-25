@@ -1,0 +1,1 @@
+ALTER TABLE public.leads ALTER COLUMN follow_up_date TYPE timestamptz USING follow_up_date::timestamptz;
